@@ -1,0 +1,195 @@
+.socialbox{
+  border-radius: 25px;
+  height:100px;
+  width:300px;
+  background-color:rgb(100, 148, 164,0.2);
+  vertical-align:middle;
+}
+
+.fa {
+  padding:2px;
+  text-align: center;
+  text-decoration: none;
+  font-size:40px;
+  color: rgba(210, 224, 233, 0.8);
+  position:relative;
+  top:20px;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa:visited{
+   color: rgba(210, 224, 233, 0.8);
+}
+.fa:active {
+  transform: translateY(4px);
+  background-size: 10%;
+  background-repeat:no-repeat;
+   
+}
+
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0%;
+  }
+  50{
+    opacity: 50%;
+  }
+  100%{
+    transform:100%; 
+  }
+}
+
+.bottompic {
+  background-color: rgba(70, 110, 150, 0.5);
+  height: 300px;
+  width: 1600px;
+  background-image: url("images/SpaceWallpaper.png");
+  opacity:0.3;
+  background-position: bottom center;
+  background-size: 156%;
+  z-index:1;
+  animation: fadeIn 3s;
+  
+  box-shadow: 0px 0px 10px 5px rgb(24, 28, 50) inset;
+  position:relative;
+  bottom:30em;
+}
+  
+
+
+
+
+.outerlinkbox {
+  height: 640px;
+  width: 300px;
+
+  text-align: center; 
+  z-index:20;
+  position:relative;
+  left:68em;
+  bottom:39.2em;
+  display: table;
+  border-radius: 25px;
+}
+
+.backgroundbox {
+  height: 670px;
+  width: 1400px;
+  z-index:20;
+  position:relative;
+  top:0.5em;
+  left:0.7em;
+  z-index:20;
+  
+}
+
+.contentbox{
+   height:640px;
+   width:1050px;
+   position:relative;
+   left:1em;
+   top:0.8em;
+   z-index:20;
+   border-radius: 25px;
+
+}
+
+.titlebox{
+   border-radius: 50px;
+   height:50px;
+   width:1050px;
+   background-color:rgb(100, 148, 164,0.2);
+   position:relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 50px;
+   color:rgba(210, 224, 233, 0.8);
+}
+
+
+
+@keyframes slideIn{
+  0%{
+    transform: skewX(70deg) translateX(500px)
+  }
+  90{
+    transform: skewX(50deg)
+  }
+  100%{
+    transform:skew(0deg)
+  }
+}
+
+.linkbox:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  background-size: 10%;
+  background-repeat:no-repeat;
+   
+}
+
+.linkbox:active::before {
+  content: attr(data-icon);
+}
+
+.divider{
+  width:5px;
+  height:auto;
+  display:inline-block;
+}
+
+.linkbox{
+   align-items: center;
+   font-size: 20px;
+   border-radius: 25px;
+   border-color:transparent;
+
+   color:rgba(210, 224, 233, 0.8);
+   animation: slideIn 0.5s ease-in;
+   animation-iteration-count: 1;
+   height:50px;
+   width:300px;
+   background-color:rgb(100, 148, 164,0.2);
+   position:relative;
+   top: 2em;
+   bottom:10em;
+   padding: 10px;
+   display:inline-block;
+
+
+}
+
+
+.picture_box{
+   width: 340px;
+   height: 340px;
+   background: red;
+   border-radius: 50%; 
+   
+
+
+   background-color:rgb(100, 148, 164,0.2);
+   position:relative;
+   left:0em;
+   top:5em;
+   z-index:20;
+}
+
+.desc_box{
+   height:500px;
+   width:680px;
+   background-color:rgb(100, 148, 164,0.2);
+   position:relative;
+   left:22em;
+   bottom:20em;
+   z-index:20;
+   border-radius: 25px;
+   display:flex;
+   margin-bottom:10px;
+   color:rgba(210, 224, 233, 0.8);
+}
